@@ -94,21 +94,34 @@ body {
 
 .prog-container progress[value] {
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   width: 100%;
-  /* margin-top: 1rem; */
-  /* margin-bottom: 1rem; */
-  /* border-color: none; */
   border-style: none;
-  /* border-radius: 2rem; */
-  /* background-color: var(--blue-vdark); */
+  border-radius: 2rem;
+  background-color: var(--blue-vdark);
 }
-
-.prog-container progress[value]::-webkit-progress-bar {
-    /* background-color: #eee;
-  border-radius: 2px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; */
+/* progress bar for Firefox */
+.prog-container progress[value]::-moz-progress-bar {
+  border-radius: 2rem;
+    background-image:
+    -moz-linear-gradient(
+      left, 
+      hsl(10, 79%, 72%),
+      hsl(335, 100%, 65%)
+    );
 }
+ .prog-container progress::-webkit-progress-bar {
+  background-color: var(--blue-vdark);
+  border-radius: 2rem;
+}
+/*
+.prog-container progress[value]::-webkit-progress-value {
+   background-image:
+	   -webkit-linear-gradient(-45deg, var(--primary-gradient)),
+	   -webkit-linear-gradient(top, var(--primary-gradient)),
+	   -webkit-linear-gradient(left, var(--primary-gradient));
+} */
 
 /* FOOTER */
 .attribution {
