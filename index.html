@@ -5,24 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Fylo data storage component</title>
 </head>
-<body>
-<main class="main-container ajsajasjsa">
-  <p class="title">You’ve used 815 GB of your storage</p>
+<body class="body-container">
+  <div class="wrapper">
+    <aside class="img-container">
+      <div class="logo-container">
+        <img src="images/logo.svg" alt="" class="logo">
+      </div>
+      <div class="icons-container">
+        <div class="wrapper-icon">
+          <img src="images/icon-document.svg" alt="Document icon" class="icon">
+        </div>  
+        <div class="wrapper-icon">
+          <img src="images/icon-folder.svg" alt="Folder icon" class="icon">
+        </div>  
+        <div class="wrapper-icon">
+          <img src="images/icon-upload.svg" alt="upload icon" class="icon">
+        </div>  
+      </div>
+    </aside>
+    <main class="main-container">
+      <div class="prog-container">
+        <label for="file">You’ve used <strong>815 GB</strong> of your storage</label>
+        <progress id="file" value="75" max="100"> 32% </progress> 
+      </div>
 
-  
-  <p class="subtittle-1">0 GB</p>
-  <p class="subtittle-2">1000 GB</p>
-  <h3 class="percentage-title">185 GB Left</h3>
-</main>
+      <div>
+        <p class="subtittle-1">0 GB</p>
+        <p class="subtittle-2">1000 GB</p>
+        <h3 class="percentage-title">185 GB Left</h3>
+      </div>
+    </main>
 
-<footer class="footer-container">
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://vilrodriguez.github.io/">Vilmarys Rodriguez</a>.
+    <footer class="footer-container">
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://vilrodriguez.github.io/">Vilmarys Rodriguez</a>.
+      </div>
+    </footer> 
   </div>
-</footer> 
 </body>
 </html>
