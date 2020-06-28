@@ -60,8 +60,30 @@
   flex-direction: column;
   justify-content: start;
   border-top-right-radius: 5rem;
-  
 }
+
+.logo-container {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+.icons-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.icons-container .wrapper-icon{
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  margin-right: 1rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  justify-content: center;
+  background-color: var(--blue-vdark);
+}
+
 
 /* MEDIA QUERIES */
 
