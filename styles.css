@@ -94,6 +94,10 @@
   border-radius: 0.5rem;
   justify-content: center;
   background-color: var(--blue-vdark);
+  transition: 0.3s ;
+}
+.icons-container .wrapper-icon:hover{
+  background-color: #ffffff;
 }
 
 .main-container {
